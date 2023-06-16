@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336619198847",
+    "project_id": "rentaku-capstone",
+    "storage_bucket": "rentaku-capstone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336619198847:android:eff829cf6b49d52d7da24a",
+        "android_client_info": {
+          "package_name": "com.example.rentakucapstone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336619198847-4tq4980an9srqmhr9f5jit6ausi5hvu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkzJhl8hU6gapdK4KJBj3o6tBol0Fjv3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336619198847-4tq4980an9srqmhr9f5jit6ausi5hvu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,35 @@
+package com.example.rentakucapstone.dataKendaraan
+
+enum class MerkMobil(val value: String) {
+    ASTON_MARTIN("ASTON MARTIN"),
+    BMW("BMW"),
+    CADILLAC("CADILLAC"),
+    CHEVROLET("CHEVROLET"),
+    CHRYSLER("CHRYSLER"),
+    DAIHATSU("DAIHATSU"),
+    FORD("FORD"),
+    HONDA("HONDA"),
+    HYUNDAI("HYUNDAI"),
+    ISUZU("ISUZU"),
+    JAGUAR("JAGUAR"),
+    JEEP("JEEP"),
+    KIA("KIA"),
+    LAND_ROVER("LAND ROVER"),
+    LEXUS("LEXUS"),
+    MAZDA("MAZDA"),
+    MERCEDES_BENZ("MERCEDES-BENZ"),
+    MG("MG"),
+    MINI("MINI"),
+    MITSUBISHI("MITSUBISHI"),
+    NISSAN("NISSAN"),
+    PEUGEOT("PEUGEOT"),
+    PORSCHE("PORSCHE"),
+    RENAULT("RENAULT"),
+    SKODA("SKODA"),
+    SSANGYONG("SSANGYONG"),
+    SUBARU("SUBARU"),
+    SUZUKI("SUZUKI"),
+    TOYOTA("TOYOTA"),
+    VOLKSWAGEN("VOLKSWAGEN")
+
+}

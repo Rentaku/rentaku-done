@@ -1,0 +1,31 @@
+package com.example.rentakucapstone.dataKendaraan
+
+enum class ModelMobil(val value: String) {
+    Alphard("Alphard"),
+    Altezza("Altezza"),
+    Altima("Altima"),
+    Aqua("Aqua"),
+    AquaSLady("Aqua S LADY"),
+    AquaG("Aqua G"),
+    AquaGPaketi("Aqua G PAKETI"),
+    AquaS("Aqua S"),
+    AquaTrdSporti("Aqua Trd sporti"),
+    AquaAqua("Aqua aqua"),
+    AvalonHybrid("Avalon Hybrid"),
+    AvalonLIMITED("Avalon LIMITED"),
+    AvalonLIMITED2("Avalon LIMITED "),
+    AvalonLimited("Avalon Limited"),
+    Avalonlimited("Avalon limited"),
+    Avella("Avella"),
+    Avensis("Avensis"),
+    Aveo("Aveo"),
+    B170EditionOne("B 170 Edition One"),
+    B200Turbo("B 200 Turbo"),
+    B9Tribeca("B9 Tribeca"),
+    BRZ("BRZ"),
+    Belta("Belta"),
+    Blade("Blade"),
+    Boxster("Boxster"),
+    C180("C 180"),
+    C180Komp("C 180 komp")
+}

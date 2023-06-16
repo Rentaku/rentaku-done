@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kendaraan.DetailKendaraanActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/previewImageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/zx25dummy" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/kawasaki_zx250r"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/colorImageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/colorTextView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+                    app:srcCompat="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/colorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="@string/location_rental"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/colorImageView"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/colorImageView"
+                    app:layout_constraintTop_toTopOf="@+id/colorImageView" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fitur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/fitur"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/colorImageView" />
+
+            <ImageView
+                android:id="@+id/imgFitur"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fitur"
+                app:srcCompat="@drawable/img"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/by"
+                android:textColor="@color/dark_grey"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="@+id/imgFitur"
+                app:layout_constraintTop_toBottomOf="@+id/imgFitur" />
+
+            <TextView
+                android:id="@+id/renterBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/renter"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="@+id/by"
+                app:layout_constraintTop_toBottomOf="@+id/by" />
+
+            <ImageView
+                android:id="@+id/rateImageView"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="64dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/ic_baseline_star_24"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/rateTextView"
+                android:layout_width="24dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="24dp"
+                android:fontFamily="@font/poppinsbold"
+                android:text="@string/_4_0"
+                android:textColor="@color/blue"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@+id/renterBy" />
+
+            <TextView
+                android:id="@+id/ulasanText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/ulasan"
+                android:textColor="@color/dark_grey"
+                android:textSize="12sp"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/rateTextView"
+                app:layout_constraintTop_toBottomOf="@+id/rateTextView"
+                app:layout_constraintTop_toTopOf="@+id/rateTextView" />
+
+            <TextView
+                android:id="@+id/tvUlasan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/lihat_ulasan"
+                android:textColor="@color/blue"
+                android:textSize="17sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/renterBy" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnPesanSekarangInDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+            android:layout_weight="1"
+            android:text="@string/pesan_sekarang"
+            android:fontFamily="@font/poppinssemibold"/>
+    </LinearLayout>
+
+</RelativeLayout>
